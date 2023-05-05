@@ -1,7 +1,9 @@
+/* Set box-sizing property for all elements to include padding and border within the element's total width and height */
 * {
     box-sizing: border-box;
 }
 
+/* Set default styles for the body element */
 body {
     display: flex;
     align-items: center;
@@ -13,11 +15,13 @@ body {
     font-size: 16px;
 }
 
+/* Define a class for hiding elements */
 .hide {
     /* '!important' is to make sure that when we add the class using JS, it takes precendence */
     display: none !important;
 }
 
+/* Define styles for a button to view repos */
 .view-repos {
     margin-top: 1.5em;
     padding: 0.5em 1em;
@@ -26,15 +30,18 @@ body {
     width: 300px;
 }
 
+/* Define styles for the Github icon */
 .fa-github-alt {
     color: #f86d58;
 }
 
+/* Define styles for images */
 img {
     max-width: 100%;
     height: auto;
 }
 
+/* Define styles for the page heading */
 h1 {
     width: 100%;
     padding: 1em 0.5em;
@@ -49,6 +56,7 @@ h1 {
     border-top-right-radius: 20px;
 }
 
+/* Define styles for the badge */
 .badge {
     height: 80px;
     width: 50px;
@@ -61,6 +69,7 @@ h1 {
     flex-direction: column;
 }
 
+/* Define styles for a circular element inside a badge */
 .circle {
     width: 20px;
     height: 20px;
@@ -72,6 +81,7 @@ h1 {
     margin-bottom: 8px;
 }
 
+/* Define styles for the Github icon inside a badge */
 .github-img {
     width: 45px;
     margin-right: 8px;
@@ -88,6 +98,7 @@ ul {
     padding: 0;
 }
 
+/* Define styles for a container element */
 .container {
     display: flex;
     justify-content: center;
@@ -98,11 +109,13 @@ ul {
     max-width: 1200px;
 }
 
+/* Define styles for the intro and repos sections */
 .intro,
 .repos {
     width: 100%;
 }
 
+/* Styles for user info section */
 .user-info {
     display: flex;
     flex-wrap: wrap;
@@ -113,6 +126,7 @@ ul {
     padding-bottom: 2em;
 }
 
+/* Set width and max width for figure element containing user avatar */
 .user-info figure {
     width: 90%;
     max-width: 200px;
@@ -230,28 +244,39 @@ section.repo-data {
     margin-top: 0;
 }
 
+/* Media query for screen widths of 700px or larger */
+
 @media (min-width: 700px) {
+    /* Adjusting the width and text alignment of the user-info div */
     .user-info div {
         width: 45%;
         text-align: left;
     }
 
+    /* Making the repo list items align with equal space in between */
     .repo-list {
         justify-content: space-between;
     }
 
+    /* Adjusting the width of the repo list items */
     .repo-list li {
         width: 48%;
     }
 }
 
+/* Media query for screen widths of 700px or smaller */
+
 @media (max-width: 700px) {
+    /* Adjusting the margin of the user-info div paragraphs */
     .user-info div p {
         margin: 10px;
     }
 }
 
+/* Media query for screen widths of 1200px or larger */
+
 @media (min-width: 1200px) {
+    /* Adjusting the width of the repo list items */
     .repo-list li {
         width: 30%;
     }
